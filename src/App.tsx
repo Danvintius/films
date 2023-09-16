@@ -1,6 +1,6 @@
 import './App.css';
 
-export let count : number = 5;
+export let count: number = 5;
 
 function App() {
   return (
