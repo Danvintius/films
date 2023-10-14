@@ -1,13 +1,20 @@
 import App from "../App";
-import { count } from '../App';
+import Star from './Star';
 
-const Stars = (count: number) => {
+function Stars(count: number) {
+    if (count > 5 || count < 1) {
+        return false;
+    }
+    const arr: number = [];
+    for (let i: number = 0; i < count; i++) {
+        arr.push(i);
+    }
     return (
     <ul className="card-body-stars u-clearfix">
-    <li>
-        <Star />
-    </li>
-</ul>
+    {arr.map(star => (
+					<Star key={star} />
+				))}
+    </ul>
     )
 }
 
