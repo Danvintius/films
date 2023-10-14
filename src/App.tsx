@@ -1,4 +1,5 @@
 import './App.css';
+import Stars from './components/Stars'
 
 export let count: number = 5;
 
