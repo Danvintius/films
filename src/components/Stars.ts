@@ -5,7 +5,7 @@ function Stars(count: number) {
     if (count > 5 || count < 1) {
         return false;
     }
-    const arr: number = [];
+    const arr: any = [];
     for (let i: number = 0; i < count; i++) {
         arr.push(i);
     }
